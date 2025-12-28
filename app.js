@@ -127,31 +127,3 @@ function showStatus(message, type) {
     statusDiv.remove();
   }, 3000);
 }
-
-// Dashboard link handler
-const dashboardLink = document.getElementById('dashboard-link');
-if (dashboardLink) {
-  dashboardLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    
-    // Detect platform
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    const isAndroid = /android/i.test(userAgent);
-    const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
-    
-    if (isAndroid) {
-      // Try to open Android app - this will open the installed app if present
-      window.location.href = 'intent://unitynodes#Intent;scheme=unitynodes;package=io.unitynodes.unityapp;S.browser_fallback_url=about:blank;end';
-    } else if (isIOS) {
-      // Try to open iOS app (you'll need to provide the iOS URL scheme)
-      window.location.href = 'unitynodes://';
-      // Fallback to App Store if app is not installed
-      setTimeout(() => {
-        window.location.href = 'https://apps.apple.com/app/unity-nodes';
-      }, 500);
-    } else {
-      // For other platforms, show a message or redirect to web dashboard
-      showStatus('Please use the Unity Nodes mobile app', 'warning');
-    }
-  });
-}
