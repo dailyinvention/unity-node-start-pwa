@@ -140,8 +140,8 @@ if (dashboardLink) {
     const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
     
     if (isAndroid) {
-      // Try to open Android app
-      window.location.href = 'intent://unitynodes#Intent;scheme=unitynodes;package=io.unitynodes.unityapp;end';
+      // Try to open Android app - this will open the installed app if present
+      window.location.href = 'intent://unitynodes#Intent;scheme=unitynodes;package=io.unitynodes.unityapp;S.browser_fallback_url=about:blank;end';
     } else if (isIOS) {
       // Try to open iOS app (you'll need to provide the iOS URL scheme)
       window.location.href = 'unitynodes://';
