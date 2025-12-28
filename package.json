@@ -1,0 +1,26 @@
+{
+  "name": "unity-nodes-lease-agreement-pwa",
+  "version": "1.0.0",
+  "description": "Progressive Web App for Unity Nodes Lease Agreement Terms",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -c-1 --cors",
+    "dev": "npx http-server -p 8000 -c-1 --cors -o",
+    "generate-icons": "node generate-icons.js",
+    "create-png-icons": "node create-png-icons.js",
+    "test": "npx lighthouse http://localhost:8000 --view"
+  },
+  "keywords": [
+    "pwa",
+    "progressive-web-app",
+    "unity-nodes",
+    "lease-agreement",
+    "offline-first"
+  ],
+  "author": "Unity Nodes",
+  "license": "UNLICENSED",
+  "devDependencies": {},
+  "optionalDependencies": {
+    "canvas": "^2.11.2"
+  }
+}

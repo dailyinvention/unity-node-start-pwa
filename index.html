@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unity Nodes - Lease Agreement and Resources">
+    <meta name="theme-color" content="#6750A4">
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" href="icons/favicon.ico" sizes="any">
+    
+    <title>Getting Started With Your Unity License</title>
+    
+    <!-- Material Design 3 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top App Bar -->
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <span class="material-icons mdc-top-app-bar__navigation-icon">home</span>
+                <span class="mdc-top-app-bar__title">Unity Nodes</span>
+            </section>
+        </div>
+    </header>
+
+    <main class="mdc-top-app-bar--fixed-adjust">
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="hero-card mdc-card mdc-card--elevated">
+                <div class="mdc-card__content">
+                    <h1 class="mdc-typography--headline3">Getting Started With Your Unity License</h1>
+                    <p class="mdc-typography--body1 intro-text">Access important documents and resources for your Unity node license.</p>
+                </div>
+            </div>
+
+            <!-- Menu Cards -->
+            <div class="menu-grid">
+                <a href="agreement.html" class="menu-card-link">
+                    <div class="mdc-card mdc-card--outlined menu-card">
+                        <div class="menu-card-content">
+                            <span class="material-icons menu-icon">description</span>
+                            <h2 class="mdc-typography--headline5">Lease Agreement Terms</h2>
+                            <p class="mdc-typography--body1">View the complete Terms of Use and Node Lease Agreement</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://unitynodes.io/" class="menu-card-link" target="_blank" rel="noopener">
+                    <div class="mdc-card mdc-card--outlined menu-card">
+                        <div class="menu-card-content">
+                            <span class="material-icons menu-icon">language</span>
+                            <h2 class="mdc-typography--headline5">Unity Nodes Website</h2>
+                            <p class="mdc-typography--body1">Visit the official Unity Nodes website for more information</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#contact" class="menu-card-link">
+                    <div class="mdc-card mdc-card--outlined menu-card">
+                        <div class="menu-card-content">
+                            <span class="material-icons menu-icon">support</span>
+                            <h2 class="mdc-typography--headline5">Support</h2>
+                            <p class="mdc-typography--body1">Get help and support for your Unity Nodes device</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="menu-card-link" id="dashboard-link">
+                    <div class="mdc-card mdc-card--outlined menu-card">
+                        <div class="menu-card-content">
+                            <span class="material-icons menu-icon">dashboard</span>
+                            <h2 class="mdc-typography--headline5">Dashboard</h2>
+                            <p class="mdc-typography--body1">Monitor your node's performance and rewards</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Install PWA prompt -->
+    <div id="install-prompt" class="mdc-snackbar install-prompt hidden">
+        <div class="mdc-snackbar__surface">
+            <div class="mdc-snackbar__label">
+                <span class="material-icons" style="vertical-align: middle; margin-right: 8px;">get_app</span>
+                Install this app for offline access
+            </div>
+            <div class="mdc-snackbar__actions">
+                <button type="button" class="mdc-button mdc-snackbar__action" id="install-button">
+                    <span class="mdc-button__label">Install</span>
+                </button>
+                <button type="button" class="mdc-icon-button mdc-snackbar__dismiss" id="dismiss-button">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
