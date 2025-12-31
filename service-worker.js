@@ -1,7 +1,9 @@
-const CACHE_NAME = 'unity-nodes-v1.0.1';
+const CACHE_NAME = 'unity-nodes-v1.0.4';
 const urlsToCache = [
   '/',
   '/index.html',
+  '/agreement.html',
+  '/privacy.html',
   '/styles.css',
   '/app.js',
   '/manifest.json',
