@@ -1,17 +1,18 @@
-const CACHE_NAME = 'unity-nodes-v1.0.5';
+const CACHE_NAME = 'unity-nodes-v1.0.6';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/agreement.html',
-  '/privacy.html',
-  '/styles.css',
-  '/app.js',
-  '/manifest.json',
-  '/icons/web-app-manifest-192x192.png',
-  '/icons/web-app-manifest-512x512.png',
-  '/icons/apple-touch-icon.png',
-  '/icons/favicon.svg',
-  '/icons/favicon.ico'
+  './',
+  './index.html',
+  './agreement.html',
+  './privacy.html',
+  './styles.css',
+  './app.js',
+  './manifest.json',
+  './icons/web-app-manifest-192x192.png',
+  './icons/web-app-manifest-512x512.png',
+  './icons/apple-touch-icon.png',
+  './icons/favicon.svg',
+  './icons/favicon.ico',
+  './icons/favicon-96x96.png'
 ];
 
 // Install event - cache resources
